@@ -1,19 +1,14 @@
 package org.example;
 
 public class BinOps {
-    int a, b, c;
 
     public String sum(String a, String b) {
-        this.a = Integer.parseInt(a, 2);
-        this.b = Integer.parseInt(b, 2);
-        c = this.a + this.b;
-        return Integer.toBinaryString(c);
+        int sum = Integer.parseInt(a, 2) + Integer.parseInt(b, 2);
+        return Integer.toBinaryString(sum);
     }
 
     public String mult(String a, String b) {
-        this.a = Integer.parseInt(a, 2);
-        this.b = Integer.parseInt(b, 2);
-        c = this.a * this.b;
-        return Integer.toBinaryString(c);
+        int mult = Integer.parseInt(a, 2) * Integer.parseInt(b, 2);
+        return Integer.toBinaryString(mult);
     }
 }
